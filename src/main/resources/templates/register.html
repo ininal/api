@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+
+    <!-- Website CSS style -->
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"/>
+    <link rel="stylesheet" th:href="@{/css/register.css}" href="../static/css/register.css"/>
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'/>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'/>
+
+    <title>Kayıt</title>
+</head>
+<body>
+<div class="container">
+    <div class="row main">
+        <div class="main-login main-center">
+            <h4>KAYIT FORMU</h4>
+            <form th:action="@{/register}" th:object="${registerFormRequest}" th:method="POST">
+
+                <div class="form-group">
+                    <label for="name" class="cols-sm-2 control-label">İsim</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" id="name" th:field="*{name}" placeholder="Lütfen adınızı giriniz.." class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="surname" class="cols-sm-2 control-label">Soyisim</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" id="surname" th:field="*{surname}" placeholder="Lütfen Soyadınızı giriniz.." class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="gsmNumber" class="cols-sm-2 control-label">GSM Numarası</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="number"  th:field="*{gsmNumber}" name="gmsNumber" id="gsmNumber"  placeholder="GSM"  class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="cols-sm-2 control-label">Email</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                            <input type="text" th:field="*{email}" name="email" id="email"  placeholder="Email" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="tckn" class="cols-sm-2 control-label">TC Kimlik Numarası</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="number"  th:field="*{tcIdentificationNumber}" name="tckn" id="tckn"  placeholder="Tc kimlik numarası" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="birthDate" class="cols-sm-2 control-label">Doğum Tarihi</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" th:field="*{birthDate}" name="birthDate" id="birthDate"  placeholder="Doğum Tarihi" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="motherMaidenName" class="cols-sm-2 control-label">Annenizin Evlenmeden Önceki Soyadı</label>
+                    <div class="cols-sm-10">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                            <input type="text" th:field="*{motherMaidenName}" name="motherMaidenName" id="motherMaidenName"  placeholder="Annenizin Evlenmeden Önceki Soyadı" class="form-control"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button href="http://deepak646.blogspot.in" target="_blank" type="button" id="button" class="btn btn-primary btn-lg btn-block login-button">Kayıt ol!</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
