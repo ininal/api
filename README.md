@@ -1,6 +1,6 @@
-## ininal Webrazzi Developer 2017 workshop
+## ininal api java code samples
 ------
-This project contains demonstration codes of Webrazzi Developer 2017 workshop.
+This project contains demonstration codes of APIs.
 
 ## Requirements
 ------
