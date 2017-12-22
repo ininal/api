@@ -7,19 +7,46 @@ import java.math.BigDecimal;
  */
 public class GetCardInfoResponse
 {
+    //User's name information
     public String name;
+
+    //User's surname information
     public String surname;
+
+    //ininal card status code information.
     public String cardStatusCode;
+
+    //ininal card status code information details.
     public String cardReasonCode;
+
+    //Status information specify that the ininal card is a physical or virtual card.
     public String isVirtualCard;
+
+    //ininal card barcode information
     public String barcodeNo;
+
+    //16-digit ininal card number information.
     public String cardNumber;
+
+    //ininal card product code information.
     public String productCode;
+
+    //information about card is registered to a user or not
     public boolean registered;
+
+    //ininal card balance information.
     public BigDecimal availableLimit;
+
+    //ininal card loadable limit information.
     public BigDecimal loadableLimit;
+
+    //ininal card monthly limit information.
     public BigDecimal monthlyLoadableLimit;
+
+    //ininal card expire date information. This information only returns for virtual cards.
     public String expDate;
+
+    //ininal card CVV information. This information only returns for virtual cards.
     public String cvv;
 
     public String getName()

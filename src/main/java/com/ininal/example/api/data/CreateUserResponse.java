@@ -5,6 +5,7 @@ package com.ininal.example.api.data;
  */
 public class CreateUserResponse
 {
+    //Unique identifier of the user
     private String userToken;
 
     public String getUserToken()

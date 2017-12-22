@@ -3,26 +3,21 @@ package com.ininal.example.api.data;
 import java.math.BigDecimal;
 
 /**
- * Created by yaseminbakir on 11.11.2017.
+ * Created by yaseminbakir on 22.12.2017.
  */
-public class LoadBalanceRequest
+public class CancelLoadBalanceRequest
 {
     //The code number stored in the ininal system of the channel making the transactions.
     private int cashOfficeId;
 
-    //ininal card barcode number.
+    //ininal card barcode number
     private String barcodeNumber;
 
-    //Unique transaction ID. Can be 11 digits maximum.
+    //Unique transaction ID. Can be 11 digits maximum. Code of the original transaction should be sent.
     private String transactionId;
 
     //Free-text load amount information.
     private BigDecimal amount;
-
-    public LoadBalanceRequest()
-    {
-        cashOfficeId = 1401;
-    }
 
     public int getCashOfficeId()
     {

@@ -5,7 +5,10 @@ package com.ininal.example.api.data;
  */
 public class VerifyOTPRequest
 {
+    //OTP token
     public String otp;
+
+    //OTP information sent to the user.
     public String token;
 
     public String getOtp()

@@ -5,8 +5,13 @@ package com.ininal.example.api.data;
  */
 public class LoadBalanceResponse
 {
+    //Transaction ID.
     public String transactionId;
+
+    //ininal card barcode number.
     public String barcodeNumber;
+
+    //Free-text load amount information.
     public String amount;
 
     public String getTransactionId()

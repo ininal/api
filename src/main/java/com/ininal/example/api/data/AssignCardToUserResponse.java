@@ -1,12 +1,12 @@
 package com.ininal.example.api.data;
 
 /**
- * Created by yaseminbakir on 12.11.2017.
+ * Created by yaseminbakir on 22.12.2017.
  */
-public class CreateVirtualCardToUserResponse
+public class AssignCardToUserResponse
 {
-    //Unique ininal card token
-    public String cardToken;
+    //unique ininal card token
+    private String cardToken;
 
     public String getCardToken()
     {

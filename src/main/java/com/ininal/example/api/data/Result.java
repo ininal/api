@@ -5,10 +5,17 @@ package com.ininal.example.api.data;
  */
 public class Result
 {
+    //HTTP response code of the request.
     private int httpCode;
+
+    //Description of the httpCode
     private String description;
+
+    //response object
     private Object response;
-    private String validationErrors;
+
+    //Validation errors
+    private Object validationErrors;
 
     public int getHttpCode()
     {
@@ -40,12 +47,12 @@ public class Result
         this.response = response;
     }
 
-    public String getValidationErrors()
+    public Object getValidationErrors()
     {
         return validationErrors;
     }
 
-    public void setValidationErrors(String validationErrors)
+    public void setValidationErrors(Object validationErrors)
     {
         this.validationErrors = validationErrors;
     }

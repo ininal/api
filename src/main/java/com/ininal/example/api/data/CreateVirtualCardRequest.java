@@ -5,7 +5,10 @@ package com.ininal.example.api.data;
  */
 public class CreateVirtualCardRequest
 {
+    //Create virtual card channel information
     private String virtualCardChannel;
+
+    //ininal card prodcut code information
     private String productCode;
 
     public String getVirtualCardChannel()

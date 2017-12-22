@@ -1,12 +1,13 @@
 package com.ininal.example.api.data;
 
-import javax.validation.constraints.NotNull;
-
 /**
- * Created by yaseminbakir on 11.11.2017.
+ * Created by yaseminbakir on 21.12.2017.
  */
-public class CreateUserRequest
+public class GetUserResponse
 {
+    //Unique identifier of the user
+    private String userToken;
+
     //Name of user
     private String name;
 
@@ -20,16 +21,23 @@ public class CreateUserRequest
     private String gsmNumber;
 
     //User TC Identification number. Should be number only and 11 digits
-    private String tcIdentificationNumber;
-
-    //User Password. Should include 1 digit and letter, minimum 8 characters without special characters
-    private String password;
+    private String tckn;
 
     //Birthdate of user. Should be on YYYY-MM-DD format
-    private String birthDate;
+    private String birthdate;
 
-    //Mother maiden name
-    private String motherMaidenName;
+    //User status information
+    private String status;
+
+    public String getUserToken()
+    {
+        return userToken;
+    }
+
+    public void setUserToken(String userToken)
+    {
+        this.userToken = userToken;
+    }
 
     public String getName()
     {
@@ -71,43 +79,33 @@ public class CreateUserRequest
         this.gsmNumber = gsmNumber;
     }
 
-    public String getTcIdentificationNumber()
+    public String getTckn()
     {
-        return tcIdentificationNumber;
+        return tckn;
     }
 
-    public void setTcIdentificationNumber(String tcIdentificationNumber)
+    public void setTckn(String tckn)
     {
-        this.tcIdentificationNumber = tcIdentificationNumber;
+        this.tckn = tckn;
     }
 
-    public String getPassword()
+    public String getBirthdate()
     {
-        return password;
+        return birthdate;
     }
 
-    public void setPassword(String password)
+    public void setBirthdate(String birthdate)
     {
-        this.password = password;
+        this.birthdate = birthdate;
     }
 
-    public String getBirthDate()
+    public String getStatus()
     {
-        return birthDate;
+        return status;
     }
 
-    public void setBirthDate(String birthDate)
+    public void setStatus(String status)
     {
-        this.birthDate = birthDate;
-    }
-
-    public String getMotherMaidenName()
-    {
-        return motherMaidenName;
-    }
-
-    public void setMotherMaidenName(String motherMaidenName)
-    {
-        this.motherMaidenName = motherMaidenName;
+        this.status = status;
     }
 }

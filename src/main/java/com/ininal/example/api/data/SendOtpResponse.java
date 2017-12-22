@@ -5,6 +5,7 @@ package com.ininal.example.api.data;
  */
 public class SendOtpResponse
 {
+    //OTP token
     public String token;
 
     public String getToken()

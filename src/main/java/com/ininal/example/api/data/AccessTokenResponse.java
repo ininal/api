@@ -5,8 +5,13 @@ package com.ininal.example.api.data;
  */
 public class AccessTokenResponse
 {
+    //Authorized unique token to be used in service calls.
     private String accessToken;
+
+    //Type information of the unique key
     private String expiresIn;
+
+    //The expression time of a single key. In milliseconds
     private String tokenType;
 
     public String getAccessToken()
